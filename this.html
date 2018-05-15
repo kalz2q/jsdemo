@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>this</title>
+        <style>
+body { background: grey; }
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>SAMPLE</h1>
+            <input type="text" class="textbox" value="お名前" >
+            <input type="text" class="textbox" value="メールアドレス" >
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            $(()=>{
+                $(".textbox").focus(function (){
+                    $(this).val("フォーカスされました！");
+                });
+            });
+        </script>
+    </body>
+</html>
